@@ -1,0 +1,966 @@
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.testimonial {
+  box-shadow: 0px 4px 4px #bfcae0;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15vw;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white);
+}
+.carousel:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15vw;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white);
+}
+
+.carousel-inner {
+  animation: slide 20s linear infinite;
+}
+
+.carousel:hover .carousel-inner {
+  animation-play-state: paused;
+}
+
+
+/* External Css*/
+a {
+  text-decoration: none;
+}
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+img {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* NavBar*/
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 5vh;
+  background-color: #E0E4EC;
+}
+.Logo {
+  color: #08299B;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: calc(16px + 1vw);
+}
+.NavLinks {
+  display: flex;
+  gap: 10vw;
+  align-items: center;
+  font-weight: 500;
+  font-size: calc(3px + 1vw);
+}
+.Links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+.Links a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.Auth {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 1vw;
+}
+.Login {
+  padding: 5px 15px;
+  border: 1px solid #08299B;
+  border-radius: 4px;
+  color: #08299B;
+}
+.SignUp {
+  padding: 5px 15px;
+  background-color: #08299B;
+  color: #fff;
+  border-radius: 4px;
+}
+
+
+/*The Banner*/
+.Banner {
+  width: 100%;
+  height: 87vh;
+  padding-top: 9vh;
+  background-color: #E0E4EC;
+}
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.BannerTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: calc(6px + 1vw);
+  line-height: 1.1;
+  margin-left: 2vw;
+}
+.Txt {
+  color: #08299B;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+.BannerTxt p {
+  font-weight: 500;
+  margin-bottom: 4vh;
+}
+.Btn {
+  background-color: #08299B;
+  color: #fff;
+  width: 12vw;
+  height: 5vh;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 2vh;
+  transition: .4s;
+}
+.Btn:hover {
+  opacity: .9;
+}
+.LearnMore {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+  font-size: calc(6px + 1vw);
+  font-style: italic;
+}
+.ArrowRight {
+  height: 2.3vh;
+  width: 1.5vw;
+}
+.BannerImage {
+  height: 55vh;
+  width: 45vw;
+  object-fit: cover;
+  border-radius: 25px 0 0 25px;
+}
+.Find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8vh 0;
+}
+.FindTxt {
+  color: #08299B;
+  font-weight: 500;
+  margin-bottom: 1.2vh;
+}
+.Find input {
+  height: 8vh;
+  width: 35vw;
+  border-radius: 25px;
+  border: none;
+  padding: 2vh 4vh;
+}
+
+
+/*Second Phase*/
+.SecondPhase{
+  margin-top: 5.5vh;
+}
+.SecondPhaseContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20vh;
+
+}
+.SecondPhaseWrap {
+  display: flex;
+  gap: 1.2vw;
+  height: 70vh;
+  margin-left: 4vh;
+}
+.SecondPhaseTxt {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  align-items: center;
+  margin-right: 8vw;
+}
+.SecondPhaseTxt h1 {
+  text-align: center;
+}
+.SecondPhaseTxt span {
+  color: #08299B;
+}
+.SecondPhaseTxt p {
+  width: 36vw;
+  text-align: center;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}
+.SecondPhaseTxt button {
+  background-color: #08299B;
+  width: 12vw;
+  height: 5vh;
+  color: #fff;
+  border-radius: .75rem;
+  margin-bottom: 2vh;
+  border: none;
+  cursor: pointer;
+}
+.Motion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+  margin-bottom: 22vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.MotionContent {
+  background-color: #e0e4ec;
+  border-radius: 0.75rem;
+  width: 20vw;
+  height: 30vh;
+  padding-top: 1.8vh;
+  text-align: center;
+  font-weight: 500;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.MotionContent2 {
+  width: 4vw;
+  height: 4vh;
+  background-color: #08299B;
+  display: flex;
+  align-items: center;
+  border-radius: 2vw;
+  padding: 2vh 0;
+  margin: 0px auto;
+  margin-bottom: 1.7vh;
+}
+.MotionContent2 img {
+  width: 3vw;
+  height: 3vh;
+  margin: 0px auto;
+}
+.MotionContent h1 {
+  margin-bottom: 4vh;
+  font-size: calc(8px + .8vw);
+}
+.MotionContent p {
+  font-size: calc(4px + .8vw);
+  font-weight: 400;
+}
+.MotionImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin-bottom: 21.9vh;
+}
+.MotionImage img {
+  width: 90.43vw;
+  height: 90.32vh;
+}
+
+
+/*Book Appointment*/
+.BookAptmt {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-right: 6vw;
+  padding-left: 3.5vw;
+}
+.Aptmt {
+  width: 100%;
+}
+.Aptmt h1 {
+  font-weight: bold;
+  font-size: calc(10px + 1vw);
+  color: #08299B;
+  margin-bottom: 8vh;
+  text-align: center;
+}
+.Doctors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 4.6vw;
+  row-gap: 8.8vh;
+}
+.TxtImages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.TxtImages img {
+  width: 17vw;
+  height: 17vh;
+  margin-bottom: 2.3vh;
+}
+.TxtImages h4 {
+  color: #08299B;
+}
+.TxtImages h5 {
+  font-size: calc(2px + 1vw);
+  color: #837D7D;
+  font-weight: 500;
+}
+.TxtImages h6 {
+  font-size: calc(1px + 1vw);
+  color: #837D7D;
+  font-weight: 300;
+}
+.Book {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 3.4vh;
+}
+.Book h1 {
+  font-weight: bold;
+  font-size: calc(14px + 1vw);
+  color: #08299B;
+}
+.BookForms {
+  width: 100%;
+}
+
+/*Form Page*/
+.AptmtForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+.AptmtForm button {
+  background-color: #08299B;
+  width: 38vw;
+  height: 7.5vh;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  margin-top: 1vh;
+  cursor: pointer;
+  transition: .3s;
+}
+.AptmtForm button:hover {
+  opacity: .9;
+}
+
+
+
+/*Testimonials*/
+.ReviewContainer {
+  margin-top: 9vh;
+  margin-bottom: 13vh;
+}
+.ReviewContainer h1 {
+  text-align: center;
+  font-weight: 500;
+  color: #837D7D;
+  font-size: calc(8px + 1vw);
+}
+.ReviewContainer h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: calc(15px + 1vw);
+  color: #08299B;
+  margin-bottom: 9vh;
+}
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  margin: 0px auto;
+  position: relative;
+}
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}
+.Review {
+  background-color: #E0E4EC;
+  min-width: 60vh;
+  border-radius: 10px;
+  padding: 0px 2vw;
+  padding-top: 10vh;
+  padding-bottom: 3vh;
+  height: 40vh;
+}
+.Review p {
+  font-size: calc(2px + .8vw);
+  text-align: justify;
+  font-weight: 400;
+  height: 20vh;
+}
+.rank {
+  display: flex;
+  gap: 1;
+}
+.star {
+  height: 1.6vh;
+  width: 1.25vw;
+}
+.BottomRank {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 2vh;
+}
+
+
+
+/*Footer*/
+.Footer {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5vh;
+  padding-bottom: 3.5vh;
+  padding-right: 4vh;
+  padding-left: 6vh;
+  background-color: #08299B;
+}
+/* .MainFooter{
+  background-color: #08299B;
+} */
+.FHead {
+  margin-right: 20vh;
+  width: 100%;
+}
+.FHead h2 {
+  font-weight: 500;
+  font-size: calc(5px + 1vw);
+  color: #E0E4EC;
+  margin-bottom: 5vh;
+}
+.QuickLinks {
+  width: 100%;
+}
+.QuickLinks h2 {
+  font-weight: 500;
+  font-size: calc(4px + 1vw);
+  color: #e0e4ec;
+  margin-bottom: 5vh;
+}
+.FooterLinks {
+  display: flex;
+  flex-direction: column;
+}
+.FooterLinks a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/*Find Hospital Page*/
+.HospitalNav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.HospitalCont {
+  padding-top: 11vh;
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.ContH {
+  height: 100%;
+  padding-top: 5vh;
+  padding-left: 6vw;
+  padding-right: 1vw;
+}
+.ContH img {
+  width: 100%;
+}
+.HospitalInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 400;
+  font-size: calc(5px + 1vw);
+}
+.HospitalInput input {
+  width: 30vw;
+  height: 8vh;
+  border-radius: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+}
+.Search {
+  display: flex;
+  gap: 4;
+  align-items: center;
+}
+.Search button {
+  background-color: #08299B;
+  width: 4vw;
+  height: 4.5vh;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Search button img {
+  width: 1.6vw;
+}
+.Search img {
+  width: 8.5vw;
+  height: 8.5vh;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.NearbyHospitals {
+  width: 100%;
+  height: 100%;
+  margin-top: 3vh;
+}
+.NearbyHospitals h1 {
+  font-size: calc(10px + 1vw);
+  font-weight: 500;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+.Nearby {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7vw;
+  margin-left: 3.4vw;
+  margin-right: 3.4vw;
+}
+.NearbyCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: calc(2px + 1vw);
+}
+.NearbyCont img {
+  width: 12vw;
+  height: 18vh;
+  margin-bottom: 4vh;
+}
+.NearbyCont a {
+  color: #08299B;
+  font-weight: 600;
+  transition: .3s;
+}
+.NearbyCont a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*All Hospital*/
+.AllH {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.AllHCont {
+  width: 100%;
+  height: 100%;
+  margin-top: 3vh;
+}
+.AllHWrap {
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  max-width: auto;
+  align-items: center;
+  position: relative;
+}
+.AllHWrap input {
+  padding-left: 4;
+  padding-right: 8;
+  height: 6.36vh;
+  width: 35vw;
+  border: 1px solid #c1c1c1;
+  border-radius: 15px;
+  font-weight: normal;
+  margin-bottom: 3vh;
+}
+.AllHWrap img {
+  width: 1.7vw;
+  position: absolute;
+  top: 2.5;
+  right: 4;
+}
+.AllH2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7vw;
+  max-width: 3.4vw;
+}
+.Hospitals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(5px + 1vw);
+  font-weight: 400;
+}
+
+/*Main Hospital*/
+.MainH {
+  padding-top: 5vh;
+  font-weight: 100;
+}
+.HBtn {
+  margin: 1vh 4vw;
+}
+.HBtn button {
+  position: absolute;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 2;
+  background-color: #bfcae0;
+  border: none;
+  padding: 1vh 3vh;
+  cursor: pointer;
+}
+.HBtn img {
+  width: 2vw;
+  color: #fff;
+}
+.EachH {
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5vh;
+}
+.EachH input {
+  padding-left: 4;
+  padding-right: 8;
+  height: 6.5vh;
+  width: 35vw;
+  border: 1px solid #c1c1c1;
+  border-radius: 15px;
+  font-weight: 400;
+  margin-bottom: 3vh;
+}
+.EachH img {
+  width: 2vw;
+  position: absolute;
+  top: 2;
+  right: 4;
+}
+.MainH1 {
+  display: flex;
+  padding-left: 4vw;
+  padding-right: 6vw;
+  height: 100%;
+  gap: 4.5vw;
+  align-items: center;
+  justify-content: center;
+}
+.MainH1>img {
+  width: 30vw;
+  height: 70vh;
+  border-radius: 20px;
+  border:  1px solid black;
+  object-fit: cover;
+}
+.MainH2 {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 100%;
+  align-items: center;
+  font-size: calc(1px + .6vw);
+}
+.MainH3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #dbe0ea;
+  width: 100%;
+  align-items: center;
+  padding: 5vh 2.5vw;
+  gap: 4vh;
+  border-radius: 20px;
+}
+.MainH4 {
+  border: .1px solid #45413c;
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+.MainH4 h1 {
+  font-weight: 200;
+}
+.MainH5 {
+  display: flex;
+  align-items: center;
+  gap: 1.3vw;
+  justify-content: center;
+}
+.MainH5 button {
+  border: none;
+  cursor: pointer;
+}
+.MainH5 button img {
+  width: 1.5vw;
+}
+.LastBtn {
+  background-color: #08299B;
+  width: 23vw;
+  height: 8vh;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 6vh;
+  cursor: pointer;
+  transition: .3s;
+}
+.LastBtn:hover {
+  opacity: 0.9;
+}
+
+
+/*The authentication page*/
+.Authentication {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+}
+.Auth1 {
+  width: 100%;
+  padding: 6.5vh;
+  background-color: #e0e4ec;
+}
+.Auth2 {
+  background-color: #f2f2f2;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+.Auth3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.5vh;
+}
+.Auth3 a {
+  margin-bottom: 2vh;
+  color: #08299B;
+  font-weight: bold;
+  font-size: calc(15px + 1vw);
+}
+.Auth3 h1 {
+  font-size: calc(5px + 1vw);
+  font-weight: bold;
+  text-align: center;
+}
+.Auth3 p {
+  text-align: center;
+  font-size: calc(5px + 1vw);
+  font-weight: 400;
+  color: #333232;
+  font-style: italic;
+  margin-top: 2vh;
+}
+.Auth3 img {
+  width: 100%;
+  height: 48vh;
+  margin-top: 8vh;
+}
+
+
+/*The Login&Register Page*/
+.LoginAuth>h1, .Register>h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(15px + 1vw);
+  margin-bottom: 4vh;
+}
+.LoginAuth form, .Register form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+.LoginAuth p, .Register p {
+  font-size: calc(3px + .8vw);
+}
+.LoginAuth p a, .Register p a {
+  text-decoration: none;
+  color: #08299B;
+  font-style: italic;
+  transition: .3s;
+}
+.LoginAuth p a:hover, .Register p a:hover {
+  text-decoration: underline;
+}
+.LoginAuth form>button, .Register form>button {
+  background-color: #08299B;
+  width: 17vw;
+  height: 7.5vh;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  margin-top: 6vh;
+  transition: .3s;
+  cursor: pointer;
+}
+.LoginAuth form>button:hover, .Register form>button:hover {
+  opacity: .9;
+}
+.TheOr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.TheOr button {
+  border: none;
+  cursor: pointer;
+}
+.TheOr img {
+  width: 1.5vw;
+}
+
+
+/*The Form-Input Css*/
+
+/*Input*/
+.MyForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+.FormInput input {
+  width: 35vw;
+  background-color: #e0e0e0;
+  height: 7.5vh;
+  border-radius: 10px;
+  border: none;
+  padding-right: 1.5vw;
+  padding-left: 1.5vw;
+}
+.FormInput .MyForm label {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+
+
+/*Mobile Screen*/
+.MobileMessage {
+  display: block;
+  width: 100%;
+  max-width: 80vw;
+}
+.MobileMessage h1 {
+  width: 50%;
+  padding: 8vh 12vw;
+  border: 2px solid #b0bdd3;
+  color: #08299B;
+  border-radius: 10px;
+  font-size: calc(5px + 1vw);
+  text-align: center;
+  font-weight: 500;
+  background-color: #E0E4EC;
+  box-shadow: 8px 4.5px 10px 1px #888888;
+  margin: 10px auto;
+}
+.Mobile {
+  display: none;
+}
+
+/*Media Screen*/
+@media only screen and (max-width: 800px) {
+  .NoMobile {
+    display: none;
+  }
+  .Mobile {
+    display: block;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
